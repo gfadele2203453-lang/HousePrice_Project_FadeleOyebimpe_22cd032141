@@ -1,0 +1,6 @@
+Name: Fadele Oyebimpe
+Matric Number: 22cd032141
+Machine Learning Algorithm Used: Random Forest Regressor
+Model persistence method used: Joblib
+Live URL of the hosted application: [To be updated after deployment]
+GitHub repository link: [To be updated after GitHub upload]
