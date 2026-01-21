@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label>OverallQual:</label><input type="number" name="OverallQual" required><br>
+        <label>GrLivArea:</label><input type="number" name="GrLivArea" required><br>
+        <label>TotalBsmtSF:</label><input type="number" name="TotalBsmtSF" required><br>
+        <label>GarageCars:</label><input type="number" name="GarageCars" required><br>
+        <label>FullBath:</label><input type="number" name="FullBath" required><br>
+        <label>YearBuilt:</label><input type="number" name="YearBuilt" required><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_text %}
+    <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
